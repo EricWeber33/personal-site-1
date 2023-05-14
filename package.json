@@ -11,7 +11,8 @@
 		"lint": "prettier --plugin-search-dir . --check .",
 		"format": "prettier --plugin-search-dir . --write .",
 		"smui-theme": "smui-theme compile static/smui.css -i src/theme",
-		"prepare": "npm run smui-theme"
+		"prepare": "npm run smui-theme",
+		"start": "npm run build"
 	},
 	"devDependencies": {
 		"@smui/button": "^7.0.0-beta.3",
@@ -23,6 +24,7 @@
 		"@smui/tab-bar": "^7.0.0-beta.3",
 		"@smui/top-app-bar": "^7.0.0-beta.3",
 		"@sveltejs/adapter-auto": "^1.0.0-next.90",
+		"@sveltejs/adapter-node": "^1.2.4",
 		"@sveltejs/kit": "^1.0.0-next.587",
 		"prettier": "^2.8.0",
 		"prettier-plugin-svelte": "^2.8.1",
