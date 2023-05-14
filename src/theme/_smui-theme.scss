@@ -1,0 +1,33 @@
+@use 'sass:color';
+
+@use '@material/theme/color-palette';
+
+// Svelte Colors!
+@use '@material/theme/index' as theme with (
+  $primary: #50eeb7,
+  $secondary: #0e1855,
+  $surface: #ffffff,
+  $background: #140e3f,
+  $error: color-palette.$red-900
+);
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: theme.$background;
+  background-image: url('rose-petals.svg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: theme.$on-surface;
+  display: block;
+}
+
+a {
+  color: theme.$primary;
+}
+
+a:visited {
+  color: color.scale(#40b3ff, $lightness: -35%);
+}
